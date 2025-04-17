@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Part 2</title>
+  </head>
+  <body>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+    <!-- <h1 class="pwskills">Somthing</h1> -->
+    <script>
+      let tittle = document.createElement("h1");
+      tittle.className = "pw skills";
+      tittle.style.fontSize = "25";
+      tittle.textContent = "PW skills , namaste";
+      console.log(tittle); // till noe not show on the display
+      document.body.appendChild(tittle); // to dispaly
+
+      //       REMOVED CHILD
+      let ul = document.querySelector("ul");
+      console.log(ul);
+      let lists = document.querySelectorAll("li");
+      console.log(lists);
+      // LOOP
+      for (list of lists) {
+        ul.removeChild(list);
+      }
+    </script>
+  </body>
+</html>

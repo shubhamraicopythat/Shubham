@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom part 3</title>
+  </head>
+  <body>
+    <h1>
+      helllo Bacch _pw skills
+      <p id="js"></p>
+    </h1>
+    <button onclick="hey()" id="jss">click on buttion</button>
+    <!-- to click on button MUST Say ONCLICK -->
+
+    <script>
+      // event listioner ---->always two things pass.
+      // 1.. phala kya ho ---. click
+      // 2... after that what calll
+
+      // al page appley ---> document
+      document.addEventListener("click", hello);
+      //       document.addEventListener("dblclick", hello);
+      //       document.addEventListener("mouseenter", hello);
+
+      //       function hello() {
+      //         document.getElementById("js").innerText = " namastey baccho ";
+      //       }
+      function hey() {
+        document.getElementById("jss").innerText = " thanks for click ";
+        document.getElementById("jss").style.color = "red";
+        document.getElementById("jss").style.backgroundColor = "pink";
+        document.getElementById("jss").style.borderColor = "blue";
+        document.getElementById("jss").style.borderRadius = "circle";
+        document.getElementById("jss").style.fontSize = "50px";
+        document.getElementById("jss").style.padding = "20px";
+      }
+    </script>
+  </body>
+</html>

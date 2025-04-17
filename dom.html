@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Part 1</title>
+  </head>
+  <body>
+    <!-- ID -->
+    <p id="one"><span>Hello </span>Namaste</p>
+
+    <!-- class -->
+    <ul>
+      <li class="class">one</li>
+      <li class="class">two</li>
+      <li class="class">three</li>
+    </ul>
+
+    <!-- partName 3 tag  -->
+    <h4>hii</h4>
+    <h4>Ram ram</h4>
+    <h4>namastey</h4>
+
+    <!-- Quariey Selector.....
+      with the help u can take all thing like
+    id ---through that #
+    tag ---through that normaly
+    class ---through that . -->
+    <h2>hello</h2>
+    <h2 classs="classs">Hola</h2>
+    <h2 class="ids">Hey</h2>
+
+    <script>
+      let var1 = document.getElementById("one");
+      console.log(var1.innerText);
+
+      //       class
+
+      let var2 = document.getElementsByClassName("class");
+      console.log(var2[0].innerText);
+      //       can we change the value inner through that
+      var2[0].innerText = "shubham ";
+
+      //       tagnam part script
+      let var3 = document.getElementsByTagName("h4");
+      console.log(var3[1].innerText);
+      var3[1].innerText = "G RAM RAM G ";
+
+      //       to change the inner color
+
+      var3[1].style.color = "red";
+      //       o/p red will be coller
+
+      // Quariey Selecter
+      let var4 = document.querySelector(".classs");
+      console.log(var4);
+
+      //       how we can change the css after thje click on the link
+      //       var4.className = "hello";
+      //       var4.classList = "hello helo hola";
+      var4.setAttribute("id", "shubham");
+    </script>
+  </body>
+</html>
